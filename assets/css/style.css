@@ -285,3 +285,44 @@ nav {
 .explore-card a:hover {
   color: var(--secondary-color);
 }
+
+/* Call to action */
+.cta-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.cta-image {
+  position: relative;
+}
+
+.cta-image .cta-img-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.cta-image .cta-img-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+.cta-content {
+  padding: 2rem 0;
+}
+
+.cta-content .section-header {
+  max-width: 400px;
+  text-align: left;
+}
+
+.cta-content p {
+  margin-bottom: 4rem;
+  color: var(--text-light);
+}
