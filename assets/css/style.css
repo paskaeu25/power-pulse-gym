@@ -33,8 +33,12 @@ img {
 
 a {
   text-decoration: none;
+  color: var(--white);
 }
 
+ul {
+  list-style: none;
+}
 /* Components */
 
 .section-container {
@@ -420,10 +424,6 @@ nav {
   border-bottom: 2px solid var(--white);
 }
 
-.price-card ul {
-  list-style: none;
-}
-
 .price-card ul li {
   margin-bottom: 0.75rem;
   color: var(--white);
@@ -517,4 +517,74 @@ nav {
   font-size: 2rem;
   color: var(--secondary-color);
   cursor: pointer;
+}
+
+/* Footer */
+.footer-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 400px repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.footer-blur {
+  bottom: 0;
+  right: 0;
+}
+
+.footer-logo {
+  max-width: 300px;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+}
+
+.footer-col p {
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.footer-socials ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-socials a {
+  padding: 5px 10px;
+  font-size: 1.25rem;
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 100%;
+  transition: 0.3s;
+}
+
+.footer-socials a:hover {
+  color: var(--white);
+  background-color: var(--secondary-color);
+}
+
+.footer-col h4 {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.footer-links a {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: var(--secondary-color);
+}
+
+.footer-bar {
+  max-width: var(--max-width);
+  color: var(--white);
+  margin: auto;
+  padding: 1rem;
+  font-size: 0.8rem;
 }
