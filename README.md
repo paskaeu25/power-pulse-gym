@@ -6,7 +6,7 @@
 
 
 ## Link
-<a href="https://paskaeu25.github.io/power-pulse-gym/" target="_blank">Power Pulse Gym Website</a>
+[Power Pulse Gym Website](https://paskaeu25.github.io/power-pulse-gym/)
 
 
 ## Website Overview 👀
