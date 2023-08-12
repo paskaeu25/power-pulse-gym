@@ -588,3 +588,50 @@ nav {
   padding: 1rem;
   font-size: 0.8rem;
 }
+
+/* Responsive styles */
+
+@media (width < 900px) {
+  .nav-links {
+    display: none;
+  }
+
+  .header-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .header-image {
+    grid-area: 1/1/2/2;
+  }
+
+  .explore-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .cta-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cta-image {
+    min-height: 500px;
+  }
+
+  .price-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 200px;
+  }
+}
+
+@media (width < 600px) {
+  .explore-header {
+    flex-direction: column;
+  }
+
+  .explore-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
