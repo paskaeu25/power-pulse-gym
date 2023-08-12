@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
   --primary-color: #111317;
@@ -20,9 +20,12 @@
 }
 
 /* Base styles */
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: var(--primary-color);
 }
 
@@ -94,6 +97,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
+  position: relative;
 }
 
 .nav-logo {
@@ -118,7 +122,7 @@ nav {
 }
 
 .link a::after {
-  content: "";
+  content: '';
   position: absolute;
   height: 2px;
   width: 0;
@@ -132,6 +136,13 @@ nav {
   width: 50%;
 }
 
+.toggle-btn {
+  color: var(--white);
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
 /* Header */
 .header-container {
   padding-top: 2rem;
@@ -143,7 +154,7 @@ nav {
 }
 
 .header-container::before {
-  content: "FITNESS";
+  content: 'FITNESS';
   color: var(--white);
   position: absolute;
   bottom: 5rem;
@@ -193,7 +204,7 @@ nav {
 }
 
 .header-image::before {
-  content: "o";
+  content: 'o';
   color: var(--secondary-color);
   position: absolute;
   top: 0;
@@ -495,7 +506,7 @@ nav {
 .review-member {
   display: flex;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .review-member img {
@@ -591,9 +602,44 @@ nav {
 
 /* Responsive styles */
 
-@media (width < 900px) {
+@media (width < 959px) {
+  nav {
+    flex-direction: column;
+  }
+
+  .nav-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .toggle-btn {
+    display: block;
+  }
+
+  .nav-links-row {
+    z-index: 1;
+    position: absolute;
+    top: 7rem;
+    right: 120%;
+    background-color: rgba(17, 19, 23, 0.8);
+    width: 100%;
+    padding: 2rem;
+    transition: 0.3s;
+  }
+
+  .nav-links-row.active {
+    right: 0;
+  }
+
   .nav-links {
-    display: none;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .active {
+    /* display: block; */
   }
 
   .header-container {
