@@ -2,6 +2,13 @@
 
 👋 Welcome to the GitHub repository for the Power Pulse Gym website! This README provides an overview of the technologies used to build the website and shares insights into our development journey.
 
+![power-pulse-gym](https://github.com/paskaeu25/power-pulse-gym/assets/60621475/bed17f6f-117a-47a3-b63e-182e4602921f)
+
+
+## Link
+<a href="https://paskaeu25.github.io/power-pulse-gym/" target="_blank">Power Pulse Gym Website</a>
+
+
 ## Website Overview 👀
 
 The Power Pulse Gym website is tailored to showcase the gym's facilities, services, and offer vital information to both potential and existing members. The website aims to create an engaging and informative online presence, ensuring the gym stands out in the digital world.
