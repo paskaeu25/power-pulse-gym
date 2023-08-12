@@ -634,4 +634,39 @@ nav {
   .explore-grid {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .cta-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .why-container {
+    margin-bottom: 15rem;
+  }
+
+  .why-grid {
+    margin: 0;
+    width: 100%;
+    bottom: -20rem;
+  }
+
+  .price-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .review-container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .review-footer {
+    flex-direction: column;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 150px;
+  }
+
+  .footer-bar {
+    text-align: center;
+  }
 }
